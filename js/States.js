@@ -112,7 +112,7 @@ var defensas = [
     //0 Defensa1
     {
         nombre: "Defensa1",
-        //0= J1, 1 = J2, 2 = J3, 3 = J4
+        //0= A1, 1 = A2, 2 = A3, 3 = A4
         probabilidades: [0.50, 0.15, 0.10, 0.10],
         ataques: [{a: 0}, {a: 1}, {a: 2}, {a: 3}]
     },
