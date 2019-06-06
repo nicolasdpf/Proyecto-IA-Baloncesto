@@ -1,8 +1,9 @@
 /*jshint esversion:6*/
-class Graph{
+class Graph {
     constructor(){
         this.dataList = {}
     }
+
     addVertex(vertex){
         if(!this.dataList[vertex]){
             this.dataList[vertex] = [];
@@ -23,6 +24,7 @@ class Graph{
             v => v !== vertex1
         )
     }
+
     removeVertex(vertex){
         while(this.adjacencyList[vertex].length){
             const adjacentVertex = this.adjacencyList[vertex].pop();
@@ -30,4 +32,6 @@ class Graph{
         }
         delete this.adjacencyList[vertex]
     }
+
+    
 }
