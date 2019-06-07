@@ -1,5 +1,3 @@
-console.log("Hola Mundo");
-
 let grafoBY = new Graph();
 
 for (let i = 0; i < ataques.length; i++) {
@@ -65,10 +63,10 @@ function calcularProbCondicinal(ataqueX, defensaTarget){
         pA += temp;
     }
 
-    
+    console.log(probAtaqueX);
     let resultado = (pDnA / pA) * 100;
-    console.log(resultado.toFixed(2));
+    //console.log(resultado.toFixed(2));
     return resultado.toFixed(2);
 }
 
-calcularProbCondicinal("ataque3", "defensa4");
+calcularProbCondicinal("ataque1", "defensa4");

@@ -162,7 +162,7 @@ body {
     font-size: 2rem;
 }
 .servicio img {
-    width: 15em;
+    width: 10em;
 }
 
 .servicio:hover{
@@ -177,4 +177,9 @@ body {
     color: var(--rojo);
     font-size: 2rem;
     text-align: center;
+}
+
+
+#ataqueSeleccionado img {
+    width: 26em;
 }

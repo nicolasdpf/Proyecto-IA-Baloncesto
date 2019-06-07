@@ -42,28 +42,28 @@ var defensas = [
     {
         nombre: "defensa1",
         //0= A1, 1 = A2, 2 = A3, 3 = A4
-        probabilidades: [0.50, 0.15, 0.10, 0.10],
+        probabilidades: [0.55, 0.17, 0.7, 0.11],
         ataques: [{a: 0}, {a: 1}, {a: 2}, {a: 3}]
     },
     //1 Defensa2
     {
         nombre: "defensa2",
         //0= J1, 1 = J2, 2 = J3, 3 = J4
-        probabilidades: [0.20, 0.15, 0.10, 0.70],
+        probabilidades: [0.27, 0.11, 0.16, 0.62],
         ataques: [{a: 0}, {a: 1}, {a: 2}, {a: 3}]
     },
     //2 Defensa3
     {
         nombre: "defensa3",
         //0= J1, 1 = J2, 2 = J3, 3 = J4
-        probabilidades: [0.20, 0.10, 0.60, 0.10],
+        probabilidades: [0.13, 0.12, 0.66, 0.10],
         ataques: [{a: 0}, {a: 1}, {a: 2}, {a: 3}]
     },
     //3 Defensa4
     {
         nombre: "defensa4",
         //0= J1, 1 = J2, 2 = J3, 3 = J4
-        probabilidades: [0.10, 0.60, 0.20, 0.10],
+        probabilidades: [0.05, 0.60, 0.11, 0.17],
         ataques: [{a: 0}, {a: 1}, {a: 2}, {a: 3}]
     }
 ];

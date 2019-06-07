@@ -52,9 +52,12 @@ function madeProcess(ataque){
     let def3 = calcularProbCondicinal(ataque, "defensa3");
     let def4 = calcularProbCondicinal(ataque, "defensa4");
 
+    let temp = [];
+    temp.push(def1);
+    temp.push(def2);
+    temp.push(def3);
+    temp.push(def4);
     
-    console.log(def1);
-    console.log(def2);
-    console.log(def3);
-    console.log(def4);
+    console.log(temp);
+
 }
