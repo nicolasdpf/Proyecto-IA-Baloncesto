@@ -48,7 +48,6 @@ function calcularProbCondicinal(ataqueX, defensaTarget){
     
     //1. Obtener los datos probabilisticos del ataque X segun cada defensa N
     probAtaqueX = probAtaqueX.probabilidades;
-    console.log(probAtaqueX);
     //2. Obtener las probabilidades de seleccionar una defensa en una jugada de ataque X
     defensas.forEach(defensa => {
         probDefensaN.push(defensa.probabilidades[iTarget]);
@@ -61,7 +60,6 @@ function calcularProbCondicinal(ataqueX, defensaTarget){
     pDnA = deftarget * probAtaqueX[iTarget].v;
 
     //5. Hallar P(D n A)
-    console.log(probDefensaN)
     for (let i = 0; i < probDefensaN.length; i++) {
         var temp = probDefensaN[i] * probAtaqueX[i].v;
         pA += temp;
@@ -69,7 +67,7 @@ function calcularProbCondicinal(ataqueX, defensaTarget){
 
     
     let resultado = (pDnA / pA) * 100;
-    console.log(resultado.toFixed(2))
+    console.log(resultado.toFixed(2));
     return resultado.toFixed(2);
 }
 

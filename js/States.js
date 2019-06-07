@@ -67,3 +67,8 @@ var defensas = [
         ataques: [{a: 0}, {a: 1}, {a: 2}, {a: 3}]
     }
 ];
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Fredoka One', cursive; */

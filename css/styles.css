@@ -1,0 +1,15 @@
+:root {
+    --oscuro: #212121
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
