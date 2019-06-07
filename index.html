@@ -10,17 +10,59 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <nav>
-            <a href="index.html" class="href">inicio</a>
-        </nav>
-    </header>
+    <div class="hero">
+        <div class="contenedor-hero">
+            <h1>BALONCESTO</h1>
+            <p>EL ATAQUE MÁS EFECTIVO</p>
+        </div>
+        <div class="contenedor-boton">
+            <button class="btnIniciar">Probar Ahora</button>
+        </div>
+    </div>
 
+    <div>
+        <div class="contenedor">
+            <div class="def-descripcion">
+                <p>Seleccione un tipo de defensa</p>
+            </div>
+            <div class="servicios">
+                <div class="servicios-contenedor">
+                    <div class="servicio" id="defensa1">
+                        <p>Ataque 1</p>
+                        <img src="img/defensas/defensa1.png" alt="">
+                    </div>
+                    <div class="servicio" id="defensa2">
+                        <p>Ataque 2</p>
+                        <img src="img/defensas/defensa2.png" alt="">
+                    </div>
+                    <div class="servicio" id="defensa3">
+                        <p>Ataque 3</p>
+                        <img src="img/defensas/defensa3.png" alt="">
+                    </div>
+                    <div class="servicio" id="defensa4">
+                        <p>Ataque 4</p>
+                        <img src="img/defensas/defensa4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div>
+        <div class="contenedor">
+            <div class = "resultado">
+                <div id="defSeleccionada">
+                </div>
+            </div>
+            <div class="estadisticas">
 
+            </div>
+        </div>
+    </div>
     <script src="js/Graph.js"></script>
     <script src="js/States.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/interfaz.js"></script>
 
 </body>
 </html>
