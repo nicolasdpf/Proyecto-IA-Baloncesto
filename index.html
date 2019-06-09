@@ -16,43 +16,49 @@
             <p>EL ATAQUE MÁS EFECTIVO</p>
         </div>
         <div class="contenedor-boton">
-           <!--  <button class="btnIniciar">Probar Ahora</button>-->
+            <!-- <button class="btn">Probar Ahora</button> -->
         </div>
     </div>
+   
 
-    <div>
-        <div class="contenedor">
-            <div class="def-descripcion">
-                <p>Seleccione un tipo de defensa</p>
+    <div class="contenedor">
+    </div>
+    <div class="contenedor">
+        <p class="def-descripcion">Seleccione un tipo de ataque</p>
+        <div class="listaAtaques">
+            <div class="selecAtaque">
+                <p>Ataque 1</p>
+                <img src="img/defensas/defensa1.png">
+                <button class="btn" id="ataque1">Seleccionar</button>                
             </div>
-            <div class="servicios">
-                <div class="servicios-contenedor">
-                    <div class="servicio" id="ataque1">
-                        <p>Ataque 1</p>
-                        <img src="img/defensas/defensa1.png" alt="">
-                    </div>
-                    <div class="servicio" id="ataque2">
-                        <p>Ataque 2</p>
-                        <img src="img/defensas/defensa2.png" alt="">
-                    </div>
-                    <div class="servicio" id="ataque3">
-                        <p>Ataque 3</p>
-                        <img src="img/defensas/defensa3.png" alt="">
-                    </div>
-                    <div class="servicio" id="ataque4">
-                        <p>Ataque 4</p>
-                        <img src="img/defensas/defensa4.png" alt="">
-                    </div>
-                </div>
+            <div class="selecAtaque">
+                <p>Ataque 2</p>
+                <img src="img/defensas/defensa1.png">
+                <button class="btn" id="ataque2">Seleccionar</button>                
+            </div>
+            <div class="selecAtaque">
+                <p>Ataque 3</p>
+                <img src="img/defensas/defensa1.png">
+                <button class="btn" id="ataque3">Seleccionar</button>                
+            </div>
+            <div class="selecAtaque">
+                <p>Ataque 4</p>
+                <img src="img/defensas/defensa1.png">
+                <button class="btn" id="ataque4">Seleccionar</button>                
             </div>
         </div>
     </div>
-
     <div>
         <div id="resultadosTitle" class="contenedor">
             <h1>
                 Resultados
             </h1>
+            <div class="contspinner">
+                    <div class="spinner">
+                            <div class="dot1"></div>
+                            <div class="dot2"></div>
+                    </div>
+                </div>
         </div>
         <div class="contenedor misresultados" id="afterclick">
             <div class = "resultado">
@@ -71,22 +77,28 @@
                       </tr>
                       <tr>
                         <td class="tg-vrwm">Defensa01</td>
-                        <td class="tg-c51l" id="d01Pd">0.3</td>
-                        <td class="tg-c51l" id="d01pna">0</td>
-                        <td class="tg-c51l" id="d01pa">0</td>
+                        <td class="tg-c51l" id="d01Pd"></td>
+                        <td class="tg-c51l" id="d01pna"></td>
+                        <td class="tg-c51l" id="d01pa"></td>
                       </tr>
-                      <!-- <tr>
+                      <tr>
                         <td class="tg-n2zj">Defensa02</td>
-                        <td class="tg-xldj" id="d02Pd">0</td>
-                        <td class="tg-xldj" id="d02pna">0</td>
-                        <td class="tg-xldj" id="d02pa">0</td>
+                        <td class="tg-xldj" id="d02Pd"></td>
+                        <td class="tg-xldj" id="d02pna"></td>
+                        <td class="tg-xldj" id="d02pa"></td>
                       </tr>
                       <tr>
                         <td class="tg-a0m7">Defensa03</td>
-                        <td class="tg-phtq" id="d03Pd">0</td>
-                        <td class="tg-phtq" id="d03pna">0</td>
-                        <td class="tg-phtq" id="d03pa">0</td>
-                      </tr> -->
+                        <td class="tg-phtq" id="d03Pd"></td>
+                        <td class="tg-phtq" id="d03pna"></td>
+                        <td class="tg-phtq" id="d03pa"></td>
+                      </tr>
+                      <tr>
+                            <td class="tg-a0m7">Defensa04</td>
+                            <td class="tg-phtq" id="d04Pd"></td>
+                            <td class="tg-phtq" id="d04pna"></td>
+                            <td class="tg-phtq" id="d04pa"></td>
+                          </tr>
                     </table></div>
                   </section>
             </div>

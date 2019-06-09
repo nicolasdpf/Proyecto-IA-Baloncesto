@@ -1,3 +1,41 @@
+/**
+ * Declaracion de variables iniciales 
+ */
+let ventanaresultads = document.querySelector(".misresultados");
+
+let botonInicial = document.getElementById("btnIniciar");
+
+let btnAtaque1 = document.getElementById("ataque1");
+let btnAtaque2 = document.getElementById("ataque2");
+let btnAtaque3 = document.getElementById("ataque3");
+let btnAtaque4 = document.getElementById("ataque4");
+
+
+
+let seleccionAtaque = document.getElementById("ataqueSeleccionado");
+let defensaResult = document.getElementById("defensaResultante");
+let porcentajeResult = document.getElementById("PorcentajeResultante");
+
+
+/**PARA LA TABLA*/
+let tablaResultados = document.getElementById("tablaRes");
+
+let def1PD = document.getElementById("d01Pd");
+let def2PD = document.getElementById("d02Pd");
+let def3PD = document.getElementById("d03Pd");
+let def4PD = document.getElementById("d04Pd");
+
+let def1pna = document.getElementById("d01pna");
+let def2pna = document.getElementById("d02pna");
+let def3pna = document.getElementById("d03pna");
+let def4pna = document.getElementById("d04pna");
+
+let def1pa = document.getElementById("d01pa");
+let def2pa = document.getElementById("d02pa");
+let def3pa = document.getElementById("d03pa");
+let def4pa = document.getElementById("d04pa");
+
+
 let grafoBY = new Graph();
 
 for (let i = 0; i < ataques.length; i++) {
@@ -63,10 +101,28 @@ function calcularProbCondicinal(ataqueX, defensaTarget){
         pA += temp;
     }
 
-    //console.log(probAtaqueX);
     let resultado = (pDnA / pA) * 100;
+    //console.log(resultado.toFixed(2));
+    
+    def1PD.innerHTML = probDefensaN[0];
+    def2PD.innerHTML = probDefensaN[1];
+    def3PD.innerHTML = probDefensaN[2];
+    def4PD.innerHTML = probDefensaN[3];
+    
+    def1pna.innerHTML = probAtaqueX[0].f;
+    def2pna.innerHTML = probAtaqueX[1].f;
+    def3pna.innerHTML = probAtaqueX[2].f;
+    def4pna.innerHTML = probAtaqueX[3].f;
+    
+    def1pa.innerHTML = probAtaqueX[0].v;
+    def2pa.innerHTML = probAtaqueX[1].v;
+    def3pa.innerHTML = probAtaqueX[2].v;
+    def4pa.innerHTML = probAtaqueX[3].v;
+    
+    
+    
     console.log(resultado.toFixed(2));
     return resultado.toFixed(2);
 }
 
-calcularProbCondicinal("ataque1", "defensa4");
+calcularProbCondicinal("ataque3", "defensa4");

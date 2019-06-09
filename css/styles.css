@@ -115,20 +115,20 @@ body {
     margin: 0px ;
 }
 
-.btnIniciar {
+.btn {
     background-color: var(--amarillo);
-    padding: 2rem 10rem;
+    padding: 1rem 2rem;
     border-radius: 5px;
     display: inline-block;
     color: var(--rojo);
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     border:none;
 }
 
-.btnIniciar:hover{
+.btn:hover{
     cursor: pointer;
     background-color: var(--rojo);
     color: var(--amarillo);
@@ -165,7 +165,7 @@ body {
     width: 10em;
 }
 
-.servicio:hover{
+.servicio img:hover{
     cursor: pointer;
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
@@ -181,7 +181,7 @@ body {
 
 
 #ataqueSeleccionado img {
-    width: 26em;
+    width: 15em;
 }
 
 #resultadosTitle {
@@ -189,10 +189,11 @@ body {
 }
 
 .misresultados {
-    display: flex;
+    display: none;
+    justify-content: center;
 }
 .estadisticas {
-    margin : 50px;
+    margin : 0 40px;
     display: flex;
     height: 100%;
 }
@@ -208,9 +209,80 @@ body {
     font-size: 15rem;
     margin: 0px;
 }
+.listaAtaques {
+    display: flex;
+    justify-content: space-around;
+}
+.listaAtaques .selecAtaque img {
+    height: 10em;
+    margin: 8px;
+}
+.listaAtaques .selecAtaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#9ABAD9;margin:0px auto;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#fff;background-color:#409cff;}
 .tg .tg-c8qn{font-weight:bold;background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}
+
+
+.spinner {
+    margin: 10px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: var(--rojo);
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce { 
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  .contspinner{
+      display: none;
+  }
