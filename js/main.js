@@ -65,7 +65,7 @@ function calcularProbCondicinal(ataqueX, defensaTarget){
 
     //console.log(probAtaqueX);
     let resultado = (pDnA / pA) * 100;
-    //console.log(resultado.toFixed(2));
+    console.log(resultado.toFixed(2));
     return resultado.toFixed(2);
 }
 
