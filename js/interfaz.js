@@ -1,3 +1,4 @@
+let consultado = true;
 btnAtaque1.addEventListener("click", ejecutarAtq1);
 btnAtaque2.addEventListener("click", ejecutarAtq2);
 btnAtaque3.addEventListener("click", ejecutarAtq3);
@@ -24,12 +25,10 @@ function ejecutarAtq4(){
 
 
 function madeProcess(ataque){
-    mostrarspinner('block');
-    setTimeout(() => {
-        ventanaresultads.style.display = 'flex';
-        mostrarspinner('none');
-
-    }, 3000);
+    
+    if(consultado == false){
+        ventanaresultads.style.display = 'none';
+    }
     let def1 = calcularProbCondicinal(ataque, "defensa1");
     let def2 = calcularProbCondicinal(ataque, "defensa2");
     let def3 = calcularProbCondicinal(ataque, "defensa3");
@@ -61,6 +60,13 @@ function madeProcess(ataque){
     }
     console.log(temp);
     console.log(mayor);
+
+    mostrarspinner('block');
+    setTimeout(() => {
+        ventanaresultads.style.display = 'flex';
+        mostrarspinner('none');
+        consultado = false;
+    }, 3000);
 }
 
 
