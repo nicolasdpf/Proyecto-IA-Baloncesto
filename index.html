@@ -49,15 +49,51 @@
     </div>
 
     <div>
-        <div class="contenedor" id="afterclick">
-            <div> <h1>Resultados</h1></div>
+        <div id="resultadosTitle" class="contenedor">
+            <h1>
+                Resultados
+            </h1>
+        </div>
+        <div class="contenedor misresultados" id="afterclick">
             <div class = "resultado">
                 <div id="ataqueSeleccionado">
                     <img src="img/defensas/defensa4.png" alt="">
                 </div>
             </div>
             <div class="estadisticas">
-                
+                <section class="tabla1" id="tablaRes">
+                    <div class="tg-wrap"><table class="tg">
+                      <tr>
+                        <th class="tg-kiyi">Defensas</th>
+                        <th class="tg-kiyi">P(D)</th>
+                        <th class="tg-kiyi">P(¬A) </th>
+                        <th class="tg-kiyi">P(A) </th>
+                      </tr>
+                      <tr>
+                        <td class="tg-vrwm">Defensa01</td>
+                        <td class="tg-c51l" id="d01Pd">0.3</td>
+                        <td class="tg-c51l" id="d01pna">0</td>
+                        <td class="tg-c51l" id="d01pa">0</td>
+                      </tr>
+                      <!-- <tr>
+                        <td class="tg-n2zj">Defensa02</td>
+                        <td class="tg-xldj" id="d02Pd">0</td>
+                        <td class="tg-xldj" id="d02pna">0</td>
+                        <td class="tg-xldj" id="d02pa">0</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-a0m7">Defensa03</td>
+                        <td class="tg-phtq" id="d03Pd">0</td>
+                        <td class="tg-phtq" id="d03pna">0</td>
+                        <td class="tg-phtq" id="d03pa">0</td>
+                      </tr> -->
+                    </table></div>
+                  </section>
+            </div>
+            <div id="probabilidadCondicional">
+                <h1>Defensa con más efectividad:</h1>
+                <div id="defensaResultante">Defensa X</div>
+                <div id="PorcentajeResultante">50%</div>
             </div>
         </div>
     </div>

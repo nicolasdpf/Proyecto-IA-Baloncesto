@@ -49,7 +49,7 @@ body {
 }
 
 .hero {
-    height: 100rem;
+    height: 100%;
     background-image: url(../img/basket-wallpaper.jpg);
 
 
@@ -73,7 +73,7 @@ body {
     color: var(--gris);
     font-size: 13rem;
     margin: 0px 0px 0px 0px;
-    padding: 500px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
 }
 
 .contenedor-hero p {
@@ -183,3 +183,34 @@ body {
 #ataqueSeleccionado img {
     width: 26em;
 }
+
+#resultadosTitle {
+    color: var(--rojo);
+}
+
+.misresultados {
+    display: flex;
+}
+.estadisticas {
+    margin : 50px;
+    display: flex;
+    height: 100%;
+}
+#defensaResultante {
+    color: var(--amarillo);
+    font-family: 'Prompt', sans-serif;
+    font-size: 4rem;
+    margin: 0px;
+}
+#PorcentajeResultante {
+    color: var(--rojo);
+    font-family: 'Prompt', sans-serif;
+    font-size: 15rem;
+    margin: 0px;
+}
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#9ABAD9;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#444;background-color:#EBF5FF;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#9ABAD9;color:#fff;background-color:#409cff;}
+.tg .tg-c8qn{font-weight:bold;background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}

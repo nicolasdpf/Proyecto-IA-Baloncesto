@@ -10,8 +10,14 @@ let btnAtaque2 = document.getElementById("ataque2");
 let btnAtaque3 = document.getElementById("ataque3");
 let btnAtaque4 = document.getElementById("ataque4");
 
+
+
 let seleccionAtaque = document.getElementById("ataqueSeleccionado");
 
+
+
+/**PARA LA TABLA*/
+let tablaResultados = document.getElementById("tablaRes");
 
 
 
@@ -59,5 +65,6 @@ function madeProcess(ataque){
     temp.push(def4);
     
     console.log(temp);
+
 
 }
